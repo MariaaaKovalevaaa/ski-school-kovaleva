@@ -1,43 +1,133 @@
 @font-face {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('../fonts/oswald-v40-latin_cyrillic-regular.woff2') format('woff2'),
-       url('../fonts/oswald-v40-latin_cyrillic-regular.woff') format('woff');
+  src: local(""),
+    url("../fonts/oswald-v40-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/oswald-v40-latin_cyrillic-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: local(''),
-       url('../fonts/oswald-v40-latin_cyrillic-500.woff2') format('woff2'),
-       url('../fonts/oswald-v40-latin_cyrillic-500.woff') format('woff');
+  src: local(""),
+    url("../fonts/oswald-v40-latin_cyrillic-500.woff2") format("woff2"),
+    url("../fonts/oswald-v40-latin_cyrillic-500.woff") format("woff");
 }
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('../fonts/montserrat-v18-latin_cyrillic-regular.woff2') format('woff2'),
-       url('../fonts/montserrat-v18-latin_cyrillic-regular.woff') format('woff');
+  src: local(""),
+    url("../fonts/montserrat-v18-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v18-latin_cyrillic-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: local(''),
-       url('../fonts/montserrat-v18-latin_cyrillic-500.woff2') format('woff2'),
-       url('../fonts/montserrat-v18-latin_cyrillic-500.woff') format('woff');
+  src: local(""),
+    url("../fonts/montserrat-v18-latin_cyrillic-500.woff2") format("woff2"),
+    url("../fonts/montserrat-v18-latin_cyrillic-500.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: italic;
   font-weight: 500;
-  src: local(''),
-       url('../fonts/montserrat-v18-latin_cyrillic-500italic.woff2') format('woff2'),
-       url('../fonts/montserrat-v18-latin_cyrillic-500italic.woff') format('woff');
+  src: local(""),
+    url("../fonts/montserrat-v18-latin_cyrillic-500italic.woff2")
+      format("woff2"),
+    url("../fonts/montserrat-v18-latin_cyrillic-500italic.woff") format("woff");
+}
+
+/* Common - общие свойства */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: #66d1ff;
+  color: #060d10;
+}
+.logo {
+  /* font-family: sans-serif; не понимаю, какой шрифт по макету? */
+  text-decoration: none;
+  /*color: inherit; пока пусть будет*/
+}
+/*.main-nav-list {
+} есть смысл давать значение этому классу, если order и number-phone разные?*/
+
+.order {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+.number-phone {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #060d10;
+}
+
+/*about*/
+.about {
+}
+
+.about-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 89px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.about-text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: #060d10;
+}
+
+/*benefits*/
+
+.benefits-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 167%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #060d10;
+}
+.benefits-title-desc {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 167%;
+  text-transform: uppercase;
+  color: #060d10;
 }
