@@ -44,6 +44,12 @@
 }
 
 /* Common - общие свойства */
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -53,6 +59,14 @@ body {
   background-color: #66d1ff;
   color: #060d10;
 }
+
+.header-wrap {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
 .logo {
   /* font-family: sans-serif; не понимаю, какой шрифт по макету? */
   text-decoration: none;
@@ -122,6 +136,7 @@ body {
   text-transform: uppercase;
   color: #060d10;
 }
+
 .benefits-title-desc {
   font-family: "Oswald", sans-serif;
   font-style: normal;
