@@ -45,19 +45,59 @@
 
 /* Common - общие свойства */
 
-.container {
-  width: 1440px;
-  margin: 0 auto;
+* {
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
 }
 
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+img {
+  display: block;
+}
+
+.order-call {
+  display: inline-block;
+  padding: 22px 108px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43,88px;
+  color: #060D10;
+  background-color: linear-gradient(208.35deg, #66D1FF 43.85%, rgba(196, 196, 196, 0) 43.86%);
+  border: 3px solid #060D10;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.main-nav-list-start {
+  display: inline-block;
+  padding: 41px 8px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29,26px;
+  color: #060D10;
+  background-color: linear-gradient(208.35deg, #66D1FF 43.85%, rgba(196, 196, 196, 0) 43.86%);
+  border: 3px solid #060D10;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
 /* Header */
 .header {
-  background-color: #66d1ff;
-  color: #060d10;
+padding: 40px 0;
+ background-color:#66D1FF;
+ color: #060D10;
 }
 
 .header-wrap {
@@ -65,6 +105,17 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
+
+
+.logo {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 47px;
+  text-decoration: none;
+  color: inherit;
+}
+
 
 
 .logo {
@@ -146,3 +197,9 @@ align-items: center;
   text-transform: uppercase;
   color: #060d10;
 }
+
+.order-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
